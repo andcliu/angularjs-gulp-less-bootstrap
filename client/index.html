@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comptable" content="IE=edge">
 	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/less" href="css/style.less">
+</head>
+<body>
 
+	<div ng-view>
+	</div>
+
+	<h1>
+		hello
+	</h1>
+
+	<a href="#!/"> Home </a> | 
+	<a href="#!/partial2"> Next </a>
+
+</body>
+	<script type="text/javascript" src="less/dist/less.min.js"></script>
 	<script type="text/javascript" src="angular/angular.js"></script>
 	<script type="text/javascript" src="angular-route/angular-route.js"></script>
-
 	<script type="text/javascript">
 		var app = angular.module('app', ['ngRoute']);
-
 		app.config(function($routeProvider){
 			$routeProvider
 			.when('/', {
@@ -24,18 +41,4 @@
 			});
 		});
 	</script>
-
-</head>
-<body>
-	<div ng-view>
-		
-	</div>
-	<h1>
-		hello
-	</h1>
-
-	<a href="#!/"> Home </a> | 
-	<a href="#!/partial2"> Next </a>
-
-</body>
 </html>
