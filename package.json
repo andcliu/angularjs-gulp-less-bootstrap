@@ -1,5 +1,5 @@
 {
-  "name": "rrrcp",
+  "name": "",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,14 @@
     "less": "^2.7.2"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "file-loader": "^0.11.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-less": "^3.3.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5"
   }
 }
