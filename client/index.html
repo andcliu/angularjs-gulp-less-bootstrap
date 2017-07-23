@@ -6,35 +6,24 @@
 	<title></title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
+	<a href="#!/"> Home </a> | 
+	<a href="#!/partial2"> Next </a>
+	
 	<div ng-view>
 	</div>
 
-	<a href="#!/"> Home </a> | 
-	<a href="#!/partial2"> Next </a>
+
 
 </body>
+	<script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="tether/dist/js/tether.min.js"></script>
 	<script type="text/javascript" src="less/dist/less.min.js"></script>
 	<script type="text/javascript" src="angular/angular.js"></script>
 	<script type="text/javascript" src="angular-route/angular-route.js"></script>
-	<script type="text/javascript">
-		var app = angular.module('app', ['ngRoute']);
-		app.config(function($routeProvider){
-			$routeProvider
-			.when('/', {
-				templateUrl: 'partials/partial1.html'
-				// controller:
-				// controllerAs:
-			})
-			.when('/partial2', {
-				templateUrl: 'partials/partial2.html'
-			})
-			.otherwise({
-				redirectTo: '/'
-			});
-		});
-	</script>
+	<script type="text/javascript" src="route.js"></script>
 </html>
