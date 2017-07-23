@@ -1,9 +1,13 @@
+body {
+  padding: 0;
+  margin: 0;
+}
 #header {
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
   background-image: url(../images/porsche.jpg);
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
